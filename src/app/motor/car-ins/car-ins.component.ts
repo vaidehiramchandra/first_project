@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class CarInsComponent {
 
+  public carName:string = "Thar"
+
 }
