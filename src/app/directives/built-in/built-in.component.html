@@ -1,0 +1,28 @@
+<p>built-in works!</p>
+<h1 *ngIf="isLogin">Welcome</h1>
+<button (click)="login()">{{isLogin ? "Logout" : "LogIn"}}</button>
+
+<hr>
+
+<ul>
+    <li *ngFor="let std of students">{{std}}</li>
+</ul>
+
+<hr>
+
+<div [ngSwitch]="color">
+    <p *ngSwitchCase="'red'">Color of Love</p>
+    <p *ngSwitchCase="'pink'">Color Of Like</p>
+    <p *ngSwitchCase="'purple'">Favourite color</p>
+    <p *ngSwitchDefault>Color of all</p>
+
+</div>
+
+<p [ngStyle]="{color : isLogin? 'red' : 'blue'}">{{isLogin ? "Welocome to app" : "Please Log In"}}</p>
+
+<p id="myId" [ngClass]="isLogin ? 'login' : 'logout'">{{isLogin ? "Welocme" : "GoodBye"}}</p>
+
+<input type="text" [(ngModel)]="user">
+<p>
+    {{user}}
+</p>
