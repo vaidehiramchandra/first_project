@@ -9,7 +9,7 @@ export class HighlightDirective {
 
   @HostListener('click')
   onClick(){
-    this.el.nativeElement.style.color="red"
+    this.el.nativeElement.style.color="blue"
   }
 
 }
