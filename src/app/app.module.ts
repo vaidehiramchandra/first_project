@@ -6,6 +6,7 @@ import { ComponentComponent } from './component/component.component';
 import { BuiltInComponent } from './directives/built-in/built-in.component';
 import { FormsModule } from '@angular/forms';
 import { HighlightDirective } from './directives/custom/highlight.directive';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { HighlightDirective } from './directives/custom/highlight.directive';
     ComponentComponent,
     BuiltInComponent,
     HighlightDirective
+    LoginComponent
   ],
   imports: [
     BrowserModule, 
