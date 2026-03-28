@@ -1,0 +1,22 @@
+<h1> {{title}} </h1>
+<hr>
+
+<a [href]="url1">Youtube</a>
+<a [href]="url2">Google</a>
+<img [src]="imgSrc" [alt]="imgAlt" height="400px">
+
+<hr>
+<h2>Count : {{count}}</h2>
+<button class="btn btn-success" (click)="increase()">Increase</button>
+<button class="btn btn-secondary" (click)="reset()">Reset</button>
+<button class="btn btn-danger" (click)="decrease()">Decrease</button>
+
+<hr>
+
+<input type="text" placeholder="Enter User Name" [(ngModel)]="user">
+
+<p><b>UserName : </b>{{user}}</p>
+
+<input type="text" placeholder="Enter Student Name" #studentInput>
+<button (click)="onSubmit(studentInput.value)">Submit</button>
+<p>Student : {{student}}</p>
