@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./component.component.css']
 })
 export class ComponentComponent {
+  public name :string = "Vaidehi"
 
 }
